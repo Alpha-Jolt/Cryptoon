@@ -1,5 +1,9 @@
-# Cryptoon
+# YOLO - Web3 Streaming
 
-A NFT OTT site that innovates uniqueness in movie and anime production houses with providing value and appreciating their work through audience engagements Not limited to that, anyone interested in creative journey can join the journey.
+A Decentralized OTT site that innovates uniqueness in streaming Movies, Series, Anime, E-Sports, Kids Cartoons.
+Rewards for Watching at Yolo with Cardano Native Token called "Lazy Dude".
 
-Creators get their ownership and ability to increase te value of content through audience engagements and watch hours
+Audience determine the value through the engagement such as Likes, Comments, Popularity, Sharing of Content.
+
+Unique NFT generation by Creators and Audience Requests for the creators.
+Stake on Production Houses, Videos, to increase the value
