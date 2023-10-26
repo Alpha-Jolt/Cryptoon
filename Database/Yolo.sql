@@ -1,5 +1,5 @@
 --User Infogrpahics
-Create Table User_Infographics (ID_Number Serial Primary Key, First_Name VARCHAR(50) Not Null, Last_Name VARCHAR(50), E_Mail_ID VARCHAR(50) Not Null, Phone_Number BIGINT Not Null, Username VARCHAR(50) Not Null);
+Create Table User_Infographics (ID_Number Serial Primary Key, First_Name VARCHAR(50) Not Null, Last_Name VARCHAR(50), E_Mail_ID VARCHAR(50) Not Null, Phone_Number BIGINT Not Null, Username VARCHAR(50) UNIQUE Not Null);
 
 
 --Wallet
