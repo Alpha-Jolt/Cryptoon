@@ -8,13 +8,13 @@ import Cardano.Wallet.Primitive.Types.Coin
 import Cardano.Wallet.Primitive.Types.Tx
 import Cardano.Wallet.Primitive.Mnemonic
 
--- Define a simple multisig wallet structure
+--Wallet Structure
 data MultiSigWallet = MultiSigWallet
   { walletOwners :: [XPubKey]
   , walletRequiredSigners :: Int
   } deriving (Show)
 
--- Create a new multisig wallet
+--New multisig wallet
 createMultiSigWallet :: [XPubKey] -> Int -> MultiSigWallet
 createMultiSigWallet owners requiredSigners =
   MultiSigWallet owners requiredSigners
@@ -26,7 +26,7 @@ signTransaction wallet transaction signers
   | not (all (`elem` walletOwners wallet) signers) = Left "Not all signers are part of the wallet"
   | otherwise = Right $ signTransactionWithKeys transaction signers
 
-
+--example use case
 main :: IO ()
 main = do
   -- Generate some test XPubKeys
