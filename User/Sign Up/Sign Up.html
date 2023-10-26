@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(https://cdnb.artstation.com/p/assets/images/images/046/373/739/large/amanda-melville-amelville-postprocess-scene-02.jpg?1644959962);
+        }
+        .container {
+            display: flex;
+            padding: 20px 20px;
+            width: 80%;
+            background: transparent;
+            border-radius: 15px;
+            backdrop-filter: blur(20px);
+            color: #0e0404;
+        }
+        .left-panel {
+            flex: 2;
+            padding: 20px;
+            background-image: ("C:\Users\Admin\OneDrive\Documents\Buisness\Yolo\Images\Icon\Yolo.png");
+            background-size: cover;
+        }
+        .right-panel {
+            flex: 1;
+            padding: 45px;
+        }
+        .form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel"></div>
+        <div class="right-panel">
+            <div class="form">
+                <h2>Sign Up</h2>
+                <form action="username.html">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <button class="btn" type="submit">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
