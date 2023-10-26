@@ -1,9 +1,13 @@
 --User Infogrpahics
-Create Table User_Infographics (ID_Number Serial Primary Key, First_Name VARCHAR(50) Not Null, Last_Name VARCHAR(50), E_Mail_ID VARCHAR(50) Not Null, Phone_Number BIGINT Not Null, Username VARCHAR(50) UNIQUE Not Null);
+Create Table User_Infographics (ID_Number Serial Not Null, First_Name VARCHAR(50) Not Null, Last_Name VARCHAR(50), E_Mail_ID VARCHAR(50) Not Null, Phone_Number BIGINT Not Null, Username VARCHAR(50) Primary Key Not Null);
 
 
 --Wallet
-Create Table Wallet (Wallet_public_key VARCHAR(255), Username VARCHAR(50));
+Create Table Wallet (Wallet_public_key VARCHAR(255) Not Null, Username VARCHAR(50) Not Null);
+Alter Table Wallet
+ADD Constraints fk_wallet_user
+	Foreign Key (Username)
+	References User_Infographics (Username);
 
 
 --Login Details--
