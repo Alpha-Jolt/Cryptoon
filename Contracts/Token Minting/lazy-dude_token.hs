@@ -56,4 +56,4 @@ main = runEmulatorTraceIO $ do
     callEndpoint @"mint-tokens" h (3600, 120, 180, [600, 900, 250])
 
 -- Token Minting Contract
--- Cryptoons
+-- YOLO - Web3 Streaming
